@@ -1,0 +1,43 @@
+
+
+Go - Raffinamento dei requisiti
+
+1. Requisiti sui giocatori
+	1.1. nickname (una stringa, univoca)
+	1.2. nome
+	1.3. cognome
+	1.4. indirizzo (v. req. 4)
+	1.5. rank (un intero > 0)
+	1.6. partite alle quali partecipa (v. req. 2)
+		1.6.1 partite alle quali partecipa con le pietre bianche (v. req. 2.5.1)
+		1.6.1 partite alle quali partecipa con le pietre nere (v. req. 2.5.2)
+
+2. Requisiti sulle partite
+	2.1. data
+	2.2. luogo (v. req. 4)
+	2.3. regole di conteggio, uno tra
+		2.3.1. cinesi
+		2.3.2. giapponesi
+	2.4. komi (un reale tra 0 e 10 inclusi)
+	2.5. giocatori che si sfidano (v. req. 1)
+		2.5.1. il giocatore che gioca con le pietre bianche
+		2.5.2. il giocatore che gioca con le pietre nere
+	2.6. esito, uno tra
+		2.6.1. partita terminata con rinuncia
+			2.6.1.1. giocatore rinunciatario (v. req. 1)
+		2.6.2. partita terminata con punteggi
+			2.6.2.1. punteggio del giocatore 'bianco' (un intero >= 0)
+			2.6.2.2. punteggio del giocatore 'nero' (un intero >= 0)
+	2.7. eventualmente, il torneo al quale si riferisce (v. req. 3)
+
+
+3. Requisiti sui tornei
+	3.1. nome
+	3.2. descrizione
+	3.3. anno edizione (un intero)
+
+4. Requisiti sui luoghi
+	4.1. indirizzo
+		4.1.1. città
+			4.1.1.1. regione
+				4.1.1.1.1. nazione	

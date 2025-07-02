@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Esercizio tabelle</title>
+  <style>
+        body {
+          background-color: #cdffcc;
+          font-family: Arial, sans-serif;
+          margin: 0 auto; /* Centrato orizzontalmente */
+          width: 80%; /* 80% di larghezza per lasciare 10% a sinistra e destra */
+        }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          background-color: #ffffff; /* Sfondo bianco per l'intera tabella */
+        }
+
+        td {
+          vertical-align: top;
+          padding: 10px;
+        }
+
+        .menu {
+          background-color: #ddd;
+          text-align: center;
+          padding: 10px;
+          font-weight: bold;
+        }
+
+        .menu a {
+          margin: 0 15px;
+          text-decoration: none;
+          color: black;
+        }
+
+        /* Applicare uno sfondo grigio a tutte le righe della tabella */
+        table tr {
+          background-color: #f2f2f2; /* Grigio chiaro per ogni riga */
+        }
+
+        /* Aggiungi un po' di stile quando passi il mouse sopra una riga */
+        table tr:hover {
+          background-color: #e0e0e0; /* Cambia leggermente il colore quando si passa sopra la riga */
+        }
+  </style>
+</head>
+<body>
+
+  <!-- Immagine Top -->
+  <table>
+    <tr>
+      <td><img src="materiale/top.jpg" alt="Top della pagina" width="100%"></td>
+    </tr>
+  </table>
+
+  <!-- Menu orizzontale -->
+  <table>
+    <tr class="menu">
+      <td colspan="2">
+        <a href="#">HOME</a> |
+        <a href="#">LA NOSTRA AZIENDA</a> |
+        <a href="#">I PRODOTTI</a> |
+        <a href="#">I SERVIZI</a> |
+        <a href="#">CARRELLO</a> |
+        <a href="#">CONTATTI</a>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Contenuto principale -->
+  <table>
+    <tr>
+      <!-- Colonna sinistra -->
+      <td width="30%">
+        <img src="materiale/registrati-ora.jpg" alt="Registrati ora"><br><br>
+        <img src="materiale/login.jpg" alt="Login" width="400">
+        <img src="materiale/catalogo.jpg" alt="Catalogo" width="100%">
+      </td>
+
+      <!-- Colonna destra -->
+      <td width="70%">
+        <p><strong>L’attività della Edit Service offre i seguenti servizi:</strong></p>
+        <p>
+          Visita periodica al vostro studio consegnandovi direttamente in conto visione le ultime novità editoriali senza obbligo di acquisto...
+        </p>
+
+        <!-- Primo libro -->
+        <table border="1" width="100%">
+          <tr>
+            <td width="20%"><img src="materiale/libro1.jpg" alt="Le Frodi Carosello" width="100"></td>
+            <td>
+              <strong>Le frodi carosello</strong><br>
+              Categoria: Fiscale<br>
+              Editore: MAGGIOLI<br>
+              Codice: 9788891619204<br>
+              Prezzo: 22,00<br>
+              <span style="color: green;">*** Articolo Disponibile ***</span><br>
+              <div style="text-align: right;"><em>..... maggiori informazioni</em></div>
+            </td>
+          </tr>
+        </table><br>
+
+        <!-- Primo divisore -->
+        <table>
+          <tr>
+            <td><img src="materiale/divisore.jpg" alt="Divisore" width="100%"></td>
+          </tr>
+        </table>
+
+        <!-- Secondo libro -->
+        <table border="1" width="100%">
+          <tr>
+            <td width="20%"><img src="materiale/libro2.jpg" alt="La cartella di pagamento" width="100"></td>
+            <td>
+              <strong>La cartella di pagamento</strong><br>
+              Categoria: Fiscale<br>
+              Editore: MAGGIOLI<br>
+              Codice: 9788891621115<br>
+              Prezzo: 54,00<br>
+              <span style="color: green;">*** Articolo Disponibile ***</span><br>
+              <div style="text-align: right;"><em>..... maggiori informazioni</em></div>
+            </td>
+          </tr>
+        </table><br>
+
+        <!-- Secondo divisore -->
+        <table>
+          <tr>
+            <td><img src="materiale/divisore.jpg" alt="Divisore" width="100%"></td>
+          </tr>
+        </table>
+
+        <!-- Terzo libro -->
+        <table border="1" width="100%">
+          <tr>
+            <td width="20%"><img src="materiale/libro3.jpg" alt="Azienda agricola e fisco" width="100"></td>
+            <td>
+              <strong>Azienda agricola e fisco</strong><br>
+              Categoria: Fiscale<br>
+              Editore: MAGGIOLI<br>
+              Codice: 9788891619815<br>
+              Prezzo: 42,00<br>
+              <span style="color: green;">*** Articolo Disponibile ***</span><br>
+              <div style="text-align: right;"><em>..... maggiori informazioni</em></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
